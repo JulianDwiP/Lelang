@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LelangActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/base_foto_user"
+            android:id="@+id/img_lelang"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Penawaran"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:stretchColumns="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+
+                        <TextView
+                            android:text="Harga Awal "
+                            />
+                        <TextView
+                            android:id="@+id/tv_hargaAwalLelang"
+                            android:text=": 90000"/>
+
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Penawaran Tertinggi  "/>
+                        <TextView
+                            android:id="@+id/tv_hargaAkhirLelang"
+                            android:text=": 200000"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:text="Berikan Penawaran"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_mulaiPenawaran"
+                    android:layout_marginLeft="20dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_penawaranLelang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Harga : "
+                            android:textSize="18dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+                        <EditText
+                            android:id="@+id/et_penawaranLelang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="20dp"
+                            />
+                    </LinearLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:stretchColumns="0,1">
+
+                            <TableRow>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:text="Batalkan"
+                                    android:textAllCaps="false"
+                                    android:id="@+id/btn_batalkanPenawaran"
+                                    android:layout_height="?actionBarSize"/>
+                                <Button
+                                    android:id="@+id/btn_kirimPenawaran"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="?actionBarSize"
+                                    android:textAllCaps="false"
+                                    android:text="Kirim"/>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Informasi Barang"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Deskripsi"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_deskripsiLelang"
+                android:text="yagdguahidowjdjlandlwjdhojd  jgaoigioadhwhkdhkwhdkhdk kl lhkhdihdwoajd"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

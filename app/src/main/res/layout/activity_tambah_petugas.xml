@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TambahPetugasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_namaPetugas_TambahPetugas"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:hint="Nama Lengkap"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/et_usernameTambahPetugas"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Username"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/et_passwordTambahPetugas"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_levelPetugas_TambahPetugas"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:entries="@array/jabatan"
+            android:layout_height="?actionBarSize"/>
+
+        <Button
+            android:id="@+id/btn_tambahPetugas"
+            android:layout_width="200dp"
+            android:text="Tambah"
+            android:layout_gravity="center"
+            android:layout_height="?actionBarSize"/>
+    </LinearLayout>
+</RelativeLayout>

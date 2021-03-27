@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_daftarPetugas"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/menu_petugasBerandaAdmin" />
+
+    <item
+        android:id="@+id/nav_daftarBarang"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/menu_barangBerandaAdmin" />
+
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_daftarLelang"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_fotoRvLelang"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+                <TableRow>
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Nama :"/>
+                    <TextView
+                        android:id="@+id/tv_namaBarangLelang"
+                        android:padding="3dip"
+                        android:text="Hahjdhkahdaj"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Status Barang :"/>
+                    <TextView
+                        android:id="@+id/tv_statusLelang"
+                        android:padding="3dip"
+                        android:text="Hahjdhkahdaj"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Harga Awal :"/>
+                    <TextView
+                        android:id="@+id/tv_hargaAwalRvLelang"
+                        android:padding="3dip"
+                        android:text="40000"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Penawar :"/>
+                    <TextView
+                        android:id="@+id/tv_hargaAkhirRvLelang"
+                        android:padding="3dip"
+                        android:text="80000"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Julian_lelang</string>
+    <string name="title_activity_beranda_admin">MainActivity</string>
+
+
+    <string name="menu_petugasBerandaAdmin">Petugas</string>
+    <string name="menu_barangBerandaAdmin">Barang</string>
+    <string name="title_activity_beranda_petugas">MainActivity</string>
+
+    <string-array name="jabatan">
+        <item>Administrator</item>
+        <item>Petugas</item>
+    </string-array>
+
+</resources>

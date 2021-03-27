@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity.LoginActivityMasyarakat">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/login_bulet"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="?actionBarSize"
+        android:fontFamily="sans-serif"
+        android:inputType="textEmailAddress"
+        android:text="Masuk"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_usernameLogin"
+        android:textColor="#fff"
+        android:textColorHint="#eee"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Username"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/login_corner_bulat"
+        android:textSize="17sp"/>
+    <EditText
+        android:id="@+id/et_passwordLogin"
+        android:textColor="#fff"
+        android:textColorHint="#eee"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/login_corner_bulat"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_masukLogin"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/corner_login"
+        android:backgroundTint="@null"
+        android:layout_marginTop="40dp"
+        android:text="Masuk"
+        android:textColor="#777"
+        android:layout_width="190dp"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/tv_lupaPasswordLogin"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:text="Lupa Kata Sandi?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginBottom="80dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:text="Belum punya akun?"/>
+    <TextView
+        android:id="@+id/tv_daftarLogin"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/biru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Disini"/>
+</LinearLayout>
+</RelativeLayout>

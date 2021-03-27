@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarRegisterMasyarakat"
+            android:layout_width="match_parent"
+            android:background="@color/bulet_login"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:src="@drawable/login_bulet"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="?actionBarSize"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textColor="#fff"
+            android:text="Daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_namaLengkapRegisterMasyarakat"
+            android:textColor="#fff"
+            android:textColorHint="#eee"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Nama Lengkap"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_corner_bulat"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/et_usernameRegisterMasyarakat"
+            android:textColor="#fff"
+            android:textColorHint="#eee"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Username"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_corner_bulat"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/et_passwordRegisterMasyarakat"
+            android:textColor="#fff"
+            android:textColorHint="#eee"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Kata Sandi"
+            android:inputType="textPassword"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/login_corner_bulat"
+            android:textSize="17sp" />
+        <EditText
+            android:id="@+id/et_noTelpRegisterMasyarakat"
+            android:textColor="#fff"
+            android:textColorHint="#eee"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Nomor Telepon"
+            android:layout_marginBottom="15dp"
+            android:inputType="phone"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/login_corner_bulat"
+            android:textSize="17sp" />
+        <Button
+            android:id="@+id/btn_daftarRegisterMasyarakat"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:background="@drawable/corner_login"
+            android:text="Daftar"
+            android:layout_marginTop="50dp"
+            android:textColor="#000"
+            android:layout_width="180dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</RelativeLayout>
